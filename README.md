@@ -19,39 +19,44 @@ By completing this tutorial series, students will understand:
 
 ## Tutorial Structure
 
-### Tutorial 1: Basic Concepts (`intro.ipynb`)
-- Introduction to convergence maps and weak lensing
+### Tutorial 1: Basic Concepts (`01_intro_basic_concepts.ipynb`)
+- Introduction to convergence maps and weak lensing theory
 - Working with HEALPix maps and healpy functions
-- Understanding galaxy size distributions
-- Visualizing the effects of gravitational lensing
+- Understanding galaxy size distributions and catalogs
+- Forward modeling: applying lensing effects to galaxy sizes
+- Visualizing correlations between galaxies and convergence
 
 ### Tutorial 2: Galaxy Catalogue Generation (`02_catalogue_generation.ipynb`)
 - Using GalSBI to generate realistic galaxy catalogues
-- Understanding galaxy properties (positions, redshifts, sizes)
-- Working with survey masks and sky coverage
+- Working with survey masks and sky coverage strategies
+- Batch processing for large-scale catalogue generation
+- Quality validation and data management best practices
+- Understanding galaxy properties and coordinate systems
 
-### Tutorial 3: Redshift Distributions (`03_redshift_distributions.ipynb`)
-- Extracting and modeling redshift distributions
+### Tutorial 3: Redshift Distributions and Cosmology (`03_redshift_distributions.ipynb`)
+- Extracting and analyzing redshift distributions from catalogues
 - Using Gaussian Mixture Models for redshift binning
-- Understanding the relationship between redshift and lensing efficiency
+- Setting up cosmological models with PyCC
+- Computing angular power spectra for different redshift bins
+- Understanding lensing efficiency and cross-bin correlations
 
-### Tutorial 4: Cosmological Power Spectra (`04_power_spectra.ipynb`)
-- Setting up cosmological models with pyccl
-- Generating convergence power spectra
-- Creating convergence maps from power spectra
-- Understanding correlation lengths and angular scales
+### Tutorial 4: Power Spectra and Convergence Maps (`04_power_spectra_and_maps.ipynb`)
+- Analyzing convergence power spectra and their properties
+- Generating Gaussian random convergence fields with healpy
+- Implementing lognormal fields for realistic non-Gaussianity
+- Comprehensive map validation and quality assessment
+- Preparing convergence maps for forward modeling
 
-### Tutorial 5: Forward Modeling (`05_forward_modeling.ipynb`)
-- Applying convergence effects to galaxy sizes
-- Comparing original vs. lensed size distributions
-- Understanding the magnification effect: `lensed_size = original_size * (1 + κ)`
-- Visualizing the spatial correlation between galaxies and convergence
+### Tutorial 5: Forward Modeling and Estimators (`05_forward_modeling_estimators.ipynb`)
+- Complete forward modeling pipeline from theory to practice
+- Building convergence estimators using statistical approaches
+- Implementing pixel-based, nearest-neighbor, and sliding window methods
+- Validating estimator performance against true convergence
+- Understanding the complete KappaBySizes methodology
 
-### Tutorial 6: Building Estimators (`06_estimator_development.ipynb`)
-- Developing methods to recover convergence from size distributions
-- Comparing local (per-pixel) vs. regional (nearest neighbors) approaches
-- Statistical techniques for convergence estimation
-- Validation and error analysis
+### Legacy Files
+- `intro.ipynb`: Original introduction notebook (kept for reference)
+- `catalogue_gen.ipynb`: Original catalogue generation notebook (content split into new tutorials)
 
 ## Prerequisites
 
