@@ -13,6 +13,12 @@ This repository contains a comprehensive tutorial series designed to teach stude
 
 ## Tutorial Structure
 
+### Notebook 0: Introduction to HEALPix and Kappa Maps
+- Basic introduction to HEALPix spherical pixelization
+- Loading and working with galaxy catalogues
+- Generating kappa maps from angular power spectra
+- Visualization techniques for spherical maps
+
 ### Notebook 1: Power Spectrum to Kappa Map Generation
 - Introduction to gravitational lensing theory
 - Power spectrum fundamentals
@@ -36,6 +42,12 @@ This repository contains a comprehensive tutorial series designed to teach stude
 - Photometric vs. spectroscopic redshifts
 - Creating and analyzing redshift distributions
 - Impact on lensing analysis
+
+### Additional Notebook: Galaxy Catalogue Generation
+- Using GalSBI library for realistic catalogue generation
+- Processing HEALPix masks and submasks
+- Generating catalogues for specific sky regions
+- Advanced catalogue manipulation techniques
 
 ## Getting Started
 
@@ -62,7 +74,8 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-4. Start with `01_power_spectrum_to_kappa.ipynb`
+4. Start with `00_intro.ipynb` for a basic introduction to HEALPix and kappa maps
+5. Continue with `01_power_spectrum_to_kappa.ipynb` for detailed theory
 
 ## Dependencies
 
